@@ -8,6 +8,9 @@ primary_region = 'lhr'
 
 [build]
 
+[deploy]
+  strategy = "canary"
+
 [env]
   PORT = "3000" # add this where PORT matches the internal_port below
 
