@@ -10,10 +10,8 @@ app.get('/version', (req, res) => {
   res.send('1') // change this string to ensure a new version deployed
 })
 
-// eslint-disable-next-line no-unused-vars
 app.get('/health', (req, res) => {
-  throw new Error('Simulated health check failure')
-  // res.send('ok')
+  res.send('ok')
 })
 
 app.listen(PORT, () => {
