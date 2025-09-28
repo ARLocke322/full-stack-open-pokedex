@@ -54,4 +54,3 @@ jobs:
           text: "🚀 New release deployed!"
           description: "Successfully deployed and tagged new version"
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
-
