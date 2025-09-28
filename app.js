@@ -11,13 +11,12 @@ app.get('/version', (req, res) => {
 })
 
 app.get('/health', (req, res) => {
-  res.send('ok')
+  throw new Error('Simulated health check failure')
+  // res.send('ok')
 })
 
 app.listen(PORT, () => {
   // random comment
-
-  throw new Error('Simulated health check failure')
   // eslint-disable-next-line no-console
-  // console.log(`server started on port ${PORT}`)
+  console.log(`server started on port ${PORT}`)
 })
