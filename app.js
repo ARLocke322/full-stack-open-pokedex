@@ -15,8 +15,7 @@ app.get('/health', (req, res) => {
 })
 
 app.listen(PORT, () => {
-
-  // random
+  // random comment
   // eslint-disable-next-line no-console
   console.log(`server started on port ${PORT}`)
 })
